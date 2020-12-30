@@ -1,0 +1,24 @@
+{
+  "name": "php-versions-action",
+  "version": "1.0.0",
+  "description": "Outputs a matrix with the current PHP versions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clevyr/php-versions-action.git"
+  },
+  "author": "Clevyr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clevyr/php-versions-action/issues"
+  },
+  "homepage": "https://github.com/clevyr/php-versions-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "axios": "^0.21.1"
+  }
+}
