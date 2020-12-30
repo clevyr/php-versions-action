@@ -4,14 +4,12 @@
     const semver = require('semver')
 
     try {
-        const now = new Date();
-
         // Download schedule json
         const phpScheduleUrl = 'https://www.php.net/releases/active.php';
         let {data} = await axios.get(phpScheduleUrl);
 
         // Flatten versions into an array
-        data = Object.values(data).flatMap((value, key) => Object.keys(value));
+        data = Object.values(data).flatMap((value) => Object.keys(value));
         const maxMajorVersions = data.reduce((acc, version) => {
             let major = semver.major(semver.coerce(version));
             if (!(major in acc) || semver.lt(semver.coerce(acc[major]), semver.coerce(version))) {
