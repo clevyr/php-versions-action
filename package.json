@@ -19,12 +19,12 @@
   },
   "homepage": "https://github.com/clevyr/php-versions-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "axios": "^0.21.1",
-    "semver": "^7.3.4"
+    "@actions/core": "1.2.6",
+    "axios": "0.21.1",
+    "semver": "7.3.4"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.26.1",
-    "eslint": "^7.16.0"
+    "@vercel/ncc": "0.26.1",
+    "eslint": "7.16.0"
   }
 }
