@@ -1,12 +1,11 @@
 (async () => {
     const core = require('@actions/core');
-    const axios = require('axios');
     const semver = require('semver')
 
     try {
         // Download schedule json
         const phpScheduleUrl = 'https://www.php.net/releases/active.php';
-        let {data} = await axios.get(phpScheduleUrl);
+        let {data} = await fetch(phpScheduleUrl);
 
         // Flatten versions into an array
         data = Object.values(data).flatMap((value) => Object.keys(value));
