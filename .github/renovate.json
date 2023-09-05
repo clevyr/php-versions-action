@@ -3,6 +3,9 @@
   "extends": [
     "local>clevyr/renovate-config"
   ],
+  "constraints": {
+      "npm": "^20"
+  },
   "regexManagers": [
     {
       "fileMatch": ["^action.yml$"],
