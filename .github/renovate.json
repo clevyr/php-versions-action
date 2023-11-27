@@ -2,5 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>clevyr/renovate-config-public"
-  ]
+  ],
+  "gitIgnoredAuthors": ["renovate[bot]@users.noreply.github.com"]
 }
